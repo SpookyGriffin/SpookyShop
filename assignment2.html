@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Legalia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css"
+        integrity="sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Azonix';
+            src: url(../Fonts/Azonix.otf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        #container::before {
+            content: "";
+            background-image: url(../Assignment/Wallpapers/worldmap.jpg);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            height: 1000px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #navbar {
+            background-color: black;
+            height: 60px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 5px;
+            /* box-shadow: 0 0 2px #3f3f3f; */
+            color: white;
+
+        }
+
+        #navbar div {
+            /* border: 2px solid black; */
+            text-align: center;
+        }
+
+        #title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #title h1 span {
+            font-family: 'Azonix';
+            padding: 4px 8px;
+            text-align: center;
+        }
+
+        #title h1 span:nth-child(3) {
+            background-color: #e1b100;
+            border-radius: 50%;
+        }
+
+        #title h5 {
+            letter-spacing: 3px;
+            margin: 5px 0px;
+        }
+
+        #nav-items a {
+            padding: 5px 35px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #nav-items a:hover {
+            background-color: #e1b100;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 15px 35px;
+            transition: all 0.3s;
+        }
+
+        #secndiv {
+            /* border: 2px solid red; */
+            padding: 0;
+            margin: 80px 0 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        section div {
+            margin: 10px;
+        }
+
+        section h1 {
+            font-size: 35px;
+            letter-spacing: 2px;
+            color: #e1b100;
+            font-family: 'Righteous', cursive;
+        }
+
+        section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section a:hover {
+            color: #e1b100;
+        }
+
+        section i {
+            margin-right: 5px;
+        }
+
+        form {
+            /* border: 2px solid red; */
+            height: 300px;
+        }
+
+        table {
+            /* border: 2px solid chartreuse; */
+            margin: auto
+        }
+
+        input {
+            width: 500px;
+            height: 30px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        textarea {
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        input::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        input:hover::-webkit-input-placeholder,
+        textarea:hover::-webkit-input-placeholder {
+            background-color: #e1b100;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            width: 170px;
+            height: 45px;
+            border-radius: 5px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            font-size: 14px;
+            background-color: #e1b100;
+            transition: all 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="title">
+            <h1><span>L</span><span>E</span><span>G</span><span>A</span><span>L</span><span>I</span><span>A</span></h1>
+            <h5>ATTORNEYS AT LAW</h5>
+        </div>
+        <div id="nav-items">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">SERVICES</a>
+            <a href="">OUR TEAM</a>
+            <a href="">CONTACT</a>
+        </div>
+    </nav>
+    <div id="container">
+        <section>
+            <div id="secndiv">
+                <div>
+                    <h1>GET IN TOUCH</h1>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i><label for="">Phone:</label>
+                    <a href="#">+2 (02) 2737 6756</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i><label for="">Email:</label>
+                    <a href="#" style="color: #e1b100;">hamdy.mostafa@legaliacorp.com</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i><label for="">Address:</label>
+                    <span>178 Mohmoud Azmy Street, off 26th July Street, Zamalek, Cairo,Egypt.</span>
+                </div>
+            </div>
+        </section>
+        <form action="" id="information">
+            <table cellspacing="30">
+                <tr>
+                    <td>
+                        <input type="text" placeholder="YOUR NAME*">
+                    </td>
+                    <td rowspan="3">
+                        <textarea name="" id="" cols="60" rows="14" placeholder="YOUR MESSAGE*"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="YOUR EMAIL*"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" placeholder="YOUR PHONE*"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button>SEND MESSAGE</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

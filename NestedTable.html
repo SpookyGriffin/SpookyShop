@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nested Table</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        table {
+            margin: 10px auto;
+            width: 350px;
+            height: 350px;
+        }
+
+        #grand {
+            border: 5px solid black;
+            border-collapse: collapse;
+        }
+
+        #outer {
+            margin: 5px;
+        }
+
+        #outer th,
+        td {
+            padding: 10px;
+        }
+
+        #inner {
+            border: 5px solid black;
+            margin: 5px 30px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        p {
+            margin: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>Horizontal and Vertical Alignment</h3>
+    <table id="grand">
+        <tr>
+            <th>
+                <table id="outer" cellspacing="10">
+                    <tr>
+                        <th colspan="2">Cell Alignment With CSS</th>
+                    </tr>
+                    <tr>
+                        <td>Examples</td>
+                        <td>
+                            <table id="inner" cellspacing="10" cellpadding="5" width="30%">
+                                <tr>
+                                    <th>Row</th>
+                                    <th>Cell - 1</th>
+                                    <th>Cell - 2</th>
+                                    <th>Cell - 3</th>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <td>CSS</td>
+                                    <td>CSS</td>
+                                    <td>CSS</td>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <td>CSS</td>
+                                    <td>CSS</td>
+                                    <td>CSS</td>
+                                </tr>
+                                <tr>
+                                    <th>5</th>
+                                    <td>CSS</td>
+                                    <td>CSS</td>
+                                    <td>CSS</td>
+                                </tr>
+                                <!-- <p>Nested Table</p> -->
+                            </table>
+                            <p>Nested Table</p>
+                        </td>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+    </table>
+</body>
+
+</html>

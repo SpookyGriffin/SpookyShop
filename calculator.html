@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <style>
+        body{
+            background-image: url(../Wallpapers/naruto-4k-gaara-oei1ped43ggi6wr4.jpg);
+            background-size: cover;
+        }
+        table {
+            background-color: black;
+            text-align: center;
+            border: 1px solid rgb(78, 74, 74);
+            width: 25%;
+            height: 500px;
+            margin: 100px auto;
+            border-radius: 20px;
+
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        .first th {
+            padding: 0px 20px 0px 0px;
+            background-color: whitesmoke;
+            font-size: large;
+            font-family: 'Orbitron';
+            text-align: right;
+        }
+
+        .data td {
+            background-color: silver;
+        }
+
+        .last td,
+        #c {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellspacing="20">
+        <tr class="first">
+            <th colspan="4">7664287.673</th>
+        </tr>
+        <tr class="data">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>/</td>
+        </tr>
+        <tr class="data">
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>*</td>
+        </tr>
+        <tr class="data">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>-</td>
+        </tr>
+        <tr class="data">
+            <td>.</td>
+            <td>0</td>
+            <td>+</td>
+            <td id="c">C</td>
+        </tr>
+        <tr class="last">
+            <td colspan="4">=</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

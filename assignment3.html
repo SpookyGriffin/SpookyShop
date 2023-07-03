@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Black Sheep</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css"
+        integrity="sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Azonix';
+            src: url(../Fonts/Azonix.otf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(#0b2037, #9ecbff);
+            height: 900px;
+        }
+
+        #navbar {
+            background: linear-gradient(#001429, #002e63);
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        #nav-items {
+            margin-left: 130px;
+        }
+
+        i{
+            margin-right: 5px;
+        }
+
+        #nav-items a {
+            padding: 15px 35px;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #nav-items a:hover {
+            background-color: #9ecbff53;
+            color: #d85c27;
+            transition: all 0.2s;
+        }
+
+        #title {
+            position: fixed;
+            top: 0;
+            left: 50px;
+            background-color: white;
+            width: 150px;
+            height: 250px;
+            cursor: pointer;
+        }
+
+        #title:hover {
+            font-size: 33px;
+            color: #ffc300;
+            filter: hue-rotate(360deg);
+            transform: rotate(360deg);
+            transition: all 0.5s;
+        }
+
+        #title img {
+            width: 150px;
+            display: block;
+            margin: 35px auto 0 auto;
+        }
+
+        #title h3 {
+            text-align: center;
+            font-family: 'Staatliches', cursive;
+            font-size: 22px;
+            letter-spacing: 2px;
+        }
+
+        #container {
+            /* border: 2px solid chartreuse; */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #container::before {
+            content: "";
+            background-image: url(../Assignment/Wallpapers/customer\ care.jpg);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            height: 840px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        #content {
+            /* border: 2px solid orange; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 225px;
+        }
+
+        #content h1 {
+            font-size: 50px;
+            font-family: 'Staatliches', cursive;
+            letter-spacing: 5px;
+        }
+
+        #content a{
+            text-decoration: none;
+            color: #d85c27;
+        }
+
+        #content a:hover{
+            color: #a96762;
+        }
+
+        #info {
+            padding: 50px 0 20px 0;
+            width: 50%;
+            background: linear-gradient(#001429, #002e63);
+            box-shadow: 0 0 15px #002e63;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        label {
+            background-color: #a96762;
+            color: white;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 42px;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        textarea{
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        input[type='radio'] {
+            cursor: pointer;
+        }
+
+        input::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        input:hover::-webkit-input-placeholder,
+        textarea:hover::-webkit-input-placeholder {
+            background-color: #b999be;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+        }
+
+        button{
+            display: block;
+            margin: auto;
+            width: 170px;
+            height: 45px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            font-weight: bolder;
+            background-color: #a96762;
+            transition: all 0.2s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="nav-items">
+            <a href=""><i class="fa-solid fa-house"></i>HOME</a>
+            <a href="">ABOUT BLACK SHEEP</a>
+            <a href="">NEWS/FEATURES/FACTS</a>
+            <a href="">WEBSITE SERVICES</a>
+            <a href="">GALLERY/PORTFOLIO</a>
+            <a href="">CONTACT US</a>
+        </div>
+    </nav>
+    <div id="title">
+        <img src="../Assignment/Wallpapers/blacksheeplogo.png" alt="">
+        <h3>BLACK SHEEP</h3>
+        <h3>WEB DESIGN</h3>
+    </div>
+    <section id="container">
+        <div id="content">
+            <h1>CONTACT US</h1>
+            <p>Email us with any questions or inquiries or call <a href="">518-387-9327</a>. We would be happy to answer your questions
+                and set up a meeting with you. Black Sheep Web Design can help set you apart from the flock!</p>
+        </div>
+        <form action="" id="info">
+            <table cellspacing="20">
+                <tr>
+                    <td class="left">
+                        <label for="">NAME</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        <label for="">EMAIL</label>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        <label for="">SUBJECT</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Inquiry For Black Sheep Web Design">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        <label for="#msg">MESSAGE</label>
+                    <td>
+                        <textarea name="" id="msg" cols="40" rows="10" placeholder="Message"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        <label for="">SEND ME A COPIED EMAIL</label>
+                    </td>
+                    <td>
+                        <input type="radio" style="margin: 0; width: 20px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button>SEND EMAIL</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+</body>
+
+</html>

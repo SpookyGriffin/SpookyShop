@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign-Up Page</title>
+</head>
+
+<body class="background-radial-gradient">
+    <!-- Section: Design Block -->
+    <section class="overflow-hidden">
+
+        <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+            <div class="row gx-lg-5 align-items-center mb-5">
+                <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+                    <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(0, 0%, 100%)">
+                        The best offer <br />
+                        <span style="color: #00225c">for your Fashion</span>
+                    </h1>
+                    <p class="mb-4 opacity-70" style="color: hsl(0, 0%, 100%)">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Temporibus, expedita iusto veniam atque, magni tempora mollitia
+                        dolorum consequatur nulla, neque debitis eos reprehenderit quasi
+                        ab ipsum nisi dolorem modi. Quos?
+                    </p>
+                </div>
+
+                <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+                    <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+                    <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+                    <div class="card text-light" style="background: linear-gradient(45deg, #009bbed2, #06003bdc)">
+                        <div class="card-body px-4 py-5 px-md-5">
+
+<!-- form here -->
+
+                            <form class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-md-8 mb-4 mx-auto mt-0">
+                                        <h3 class="log-head text-center">Sign Up For Free</h3>
+                                    </div>
+                                </div>
+                                <!-- 2 column grid layout with text inputs for the first and last names -->
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <input type="text" class="form-control" id="validationCustom01"
+                                            placeholder="First Name" autocomplete="given-name" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <input type="text" class="form-control" id="validationCustom02"
+                                            placeholder="Last Name" autocomplete="family-name" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Email / Username -->
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <input type="email" id="validationCustom03" class="form-control"
+                                            placeholder="Enter Email" autocomplete="email" required />
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text bg-light text-dark"
+                                                id="inputGroupPrepend">@</span>
+                                            <input type="text" class="form-control" id="validationCustomUsername"
+                                                aria-describedby="inputGroupPrepend" placeholder="Username" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Phone Number -->
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text bg-light text-dark"
+                                                id="inputGroupPrepend">+91</span>
+                                            <input type="tel" class="form-control" id="phone" autocomplete="tel"
+                                                pattern="[0-9]{10}"
+                                                aria-describedby="inputGroupPrepend" placeholder="Your Phone Number"
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Please enter a valid phone number
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Password input -->
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <input type="password" id="validationCustom04" class="form-control"
+                                            placeholder="Enter Password" required />
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <input type="password" id="validationCustom04" class="form-control"
+                                            placeholder="Confirm Password" required />
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Checkbox -->
+                                <div class="form-check d-flex justify-content-center mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Agree to terms and conditions
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-info btn-block mb-4">
+                                    Sign up
+                                </button>
+
+                                <!-- Register buttons -->
+                                <div class="text-center">
+                                    <p>or sign up with:</p>
+                                    <button type="button" class="btn btn-link btn-floating mx-1 text-info">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-link btn-floating mx-1 text-info">
+                                        <i class="fab fa-google"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-link btn-floating mx-1 text-info">
+                                        <i class="fab fa-twitter"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-link btn-floating mx-1 text-info">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section: Design Block -->
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Check Board</title>
+    <style>
+        body {
+            background: linear-gradient(0deg, darkblue, lightsalmon);
+        }
+
+        .outer {
+            border: 10px ridge rgb(0, 0, 90);
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+            background: linear-gradient(45deg, lightsalmon, darkblue);
+        }
+
+        .innerpink {
+            width: 100px;
+            height: 100px;
+            border: 10px ridge darkblue;
+            background-color: lightsalmon;
+        }
+
+        .innerblue {
+            width: 100px;
+            height: 100px;
+            border: 10px ridge lightsalmon;
+            background-color: rgb(0, 0, 90);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="innerpink" style="border-top: none; border-left: none;"></div>
+        <div class="innerblue" style="margin-left: 110px;"></div>
+        <div class="innerpink" style="margin-left: 230px;"></div>
+        <div class="innerblue" style="margin-left: 350px;"></div>
+        <div class="innerpink" style="margin-left: 470px;"></div>
+        <div class="innerblue" style="margin-left: 590px;"></div>
+        <div class="innerpink" style="margin-left: 710px; border-bottom: none; border-right: none;"></div>
+    </div>
+</body>
+
+</html>

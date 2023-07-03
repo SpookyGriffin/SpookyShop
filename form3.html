@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, rgb(0, 255, 255), rgb(183, 0, 255));
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        form {
+            width: 900px;
+            height: 500px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        table {
+            width: 700px;
+            height: 300px;
+        }
+
+        input {
+            width: 280px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: 2px solid black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+        
+        textarea {
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: 2px solid black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        input:hover,
+        textarea:hover {
+            border-bottom: 2px solid rgb(101, 189, 218);
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+        }
+        
+        input::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        input:hover::-webkit-input-placeholder,
+        textarea:hover::-webkit-input-placeholder {
+            background: -webkit-linear-gradient(rgb(0, 189, 252), rgb(157, 0, 255));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        input[type="submit"], button {
+            background: linear-gradient(90deg, rgb(142, 225, 255), rgb(213, 145, 255));
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border: none;
+            width: 150px;
+            height: 40px;
+        }
+
+        input[type="submit"]:hover, button:hover {
+            background: linear-gradient(90deg, rgb(41, 193, 244), rgb(182, 65, 255));
+            font-size: 17px;
+            color: white;
+            cursor: pointer;
+        }
+
+        h1 {
+            background: -webkit-linear-gradient(135deg, rgb(61, 168, 203), rgb(157, 0, 255), rgb(61, 168, 203), rgb(157, 0, 255));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="container">
+        <h1>Responsive Contact Us Form</h1>
+        <table cellspacing="30px">
+            <tr>
+                <td>
+                    <input type="text" placeholder="First Name">
+                </td>
+                <td>
+                    <input type="text" placeholder="Last Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" placeholder="Email Address">
+                </td>
+                <td>
+                    <input type="text" placeholder="Website Name">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="" id="" cols="75" rows="3" placeholder="Write Your Message"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                    <!-- <button>Submit</button> -->
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, rgb(170, 170, 170), rgb(240, 240, 240));
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head {
+            background-color: ghostwhite;
+            /* border: 2px solid red; */
+            width: 986px;
+            padding: 15px 0px 10px 15px;
+        }
+
+        form {
+            background: url(../Wallpapers/blue\ 1.jpg);
+            background-size: cover;
+            width: 800px;
+            padding: 100px;
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            width: fit-content;
+            color: white;
+            font-family: 'Signika Negative', sans-serif;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+        }
+
+        table {
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .captcha {
+            width: 200px;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0px;
+            border-radius: 5px;
+            color: black;
+        }
+
+        input[type='checkbox'] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        input,
+        textarea,
+        select {
+            border: none;
+            padding: 10px;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+        }
+        
+        input:hover,
+        textarea:hover,
+        select:hover {
+            background-color: rgba(255, 255, 255, 0.737);
+        }
+
+        input::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            /* color: black; */
+            font-size: 16px;
+            font-family: 'Signika Negative', sans-serif;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+        }
+
+        .name {
+            width: 149px;
+        }
+
+        .mail {
+            width: 324px;
+        }
+
+        .mobile {
+            width: 91px;
+        }
+
+        select {
+            width: 200px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Signika Negative', sans-serif;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            background: none;
+            border: 2px solid white;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: white;
+            font-size: 16px;
+            font-family: 'Signika Negative', sans-serif;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgba(255, 255, 255, 0.379);
+            font-size: 17px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <i class="fa-sharp fa-solid fa-circle fa-1x"></i>
+        <i class="fa-sharp fa-solid fa-circle"></i>
+        <i class="fa-sharp fa-solid fa-circle"></i>
+    </div>
+    <form action="">
+        <div class="container">
+            <h1>Contact Form</h1>
+            <table cellspacing="10px">
+                <tr>
+                    <td><label for="">Your Name</label></td>
+                    <td>
+                        <input type="text" class="name" placeholder="First Name">
+                        <input type="text" class="name" placeholder="Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Your Email</label></td>
+                    <td>
+                        <input type="email" class="mail" placeholder="e.g, hell@contact.net">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Phone*</label></td>
+                    <td>
+                        <input type="text" class="mobile" placeholder="###">
+                        <input type="text" class="mobile" placeholder="###">
+                        <input type="text" class="mobile" placeholder="###">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Message Subject</label></td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">Other</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                            <option value="">Option 4</option>
+                            <option value="">Option 5</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Message*</label></td>
+                    <td>
+                        <textarea name="" id="" cols="42" rows="5" placeholder="Write a message"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Verification*</label></td>
+                    <td>
+                        <div class="captcha">
+                            <div style="display:flex; align-items: center;">
+                                <input type="checkbox">
+                                <span>I'm not a robot</span>
+                            </div>
+                            <a href=""><i class="fa-solid fa-rotate-right"></i></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <button>SUBMIT FORM</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

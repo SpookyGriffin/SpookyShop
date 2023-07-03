@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .main{
+            background-color: beige;
+            width: 200px;
+            height: 200px;
+            border: 2px solid maroon;
+            /* border-radius: 50%; */
+            margin: 200px auto 50px;
+            animation-name: anime1;
+            animation-duration: 5s;
+            /* animation-delay: 2s; */
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes anime1{
+            from{
+                transform: rotate(0) translate(0,0);
+            }
+            to{
+                transform: rotate(360deg) translate(100px,100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+    <div class="main"></div>
+    <div class="main"></div>
+</body>
+</html>

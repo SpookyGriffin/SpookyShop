@@ -1,0 +1,212 @@
+/* body {
+    height: 100vh;
+} */
+
+/* 
+
+form {
+    border: 2px solid black;
+    background: linear-gradient(45deg, rgb(156, 1, 170), rgb(0, 0, 115));
+    width: fit-content;
+    margin: auto;
+    color: ghostwhite;
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-family: 'Righteous';
+    letter-spacing: 4px;
+}
+
+label {
+    font-family: 'verdana';
+}
+
+input {
+    display: block;
+    border-bottom: 2px solid ghostwhite;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: none;
+    width: 280px;
+    margin: 10px 0px 30px 0px;
+    font-family: 'verdana';
+}
+
+input:hover {
+    border-bottom: 2px solid orchid;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'verdana';
+}
+
+input:hover::-webkit-input-placeholder {
+    color: orchid;
+}
+
+#btn {
+    border: 2px solid ghostwhite;
+    border-radius: 30px;
+    padding: 6.5px 0px;
+    text-align: center;
+    display: inline-block;
+    color: ghostwhite;
+    text-decoration: none;
+    width: 280px;
+    margin-top: 30px;
+    font-family: 'verdana';
+}
+
+#btn:hover {
+    color: orchid;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    padding: 5px 0px;
+    letter-spacing: 1px;
+}
+
+.two {
+    border: 2px solid black;
+    margin: 20px 0px;
+    padding: 0;
+}
+
+p {
+    text-align: center;
+    margin: 0 0 5px 0;
+    font-family: 'verdana';
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icn {
+    color: ghostwhite;
+    margin: 0px 10px;
+}
+
+a {
+    font-family: 'verdana';
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: orchid;
+}
+
+.three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    opacity: 0.5;
+}
+
+h3 {
+    margin: 10px 0 0 0;
+    letter-spacing: 2px;
+    font-family: 'Righteous';
+    letter-spacing: 3px;
+}
+
+.in-inner{
+    border: 2px solid black;
+    display: flex;
+    font-size: 12px;
+    font-family: 'verdana';
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+    width: fit-content;
+    margin: 0 5px 0 0;
+}
+
+.one i{
+    margin-right: 5px;
+}
+
+*/
+
+/* ############################################################################################################################################################################ */
+
+.background-radial-gradient {
+    background-color: rgb(220, 198, 255);
+    background-image: radial-gradient(650px circle at 0% 0%,
+            #ffdbef 15%,
+            #ffbff2 30%,
+            #f2b1ff 40%,
+            #e1aaff 60%,
+            transparent 100%),
+        radial-gradient(1250px circle at 100% 100%,
+            #ffcc89 5%,
+            #ffee7e 10%,
+            #bbffec 30%,
+            #b5e5ff 50%,
+            #c2c5ff 70%,
+            transparent 100%);
+}
+
+#radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#00fff7, #008ed0);
+    overflow: hidden;
+}
+
+#radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#ff0000, #ffe100);
+    overflow: hidden;
+}
+
+.bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+}
+
+
+.form-control {
+    color: #003d59;
+    /* background: none; */
+    /* outline: none; */
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #7398a9 !important;
+    font-weight: 100;
+}
+
+input:hover::-webkit-input-placeholder {
+    color: #165879 !important;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    padding-right: calc(1.6em + 0.75rem);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc4c64'%3E%3Ccircle cx='6' cy='6' r='4.5'/%3E%3Cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3E%3Ccircle cx='6' cy='8.2' r='.6' fill='%23dc4c64' stroke='none'/%3E%3C/svg%3E");
+}
+
+.log-head{
+    font-weight: 400;
+    font-size: 30px !important;
+}

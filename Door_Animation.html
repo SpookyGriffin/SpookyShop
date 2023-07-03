@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Door Opening Animation Using Transform & Transitions</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            margin-top: 50px;
+            padding: 0;
+            /* border: 2px solid darkred; */
+            width: 338px;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+        .container img{
+            margin: 0;
+            padding: 0;
+            width: inherit;
+            height: inherit;
+        }
+        #left{
+            margin: 0;
+            padding: 0;
+            background-image: url(../Wallpapers/spidylogo.jpg);
+            background-position: left;
+            /* border: 1px solid beige; */
+            width: 50%;
+            height: 100%;
+            transform-origin: left;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: perspective(400px) rotate(0deg);
+        }
+        .container:hover #left{
+            transform: perspective(400px) rotateY(90deg);
+            transition: all 5s;
+        }
+        #right{
+            margin: 0;
+            padding: 0;
+            background-image: url(../Wallpapers/spidylogo.jpg);
+            background-position: right;
+            /* border: 1px solid beige; */
+            width: 50%;
+            height: 100%;
+            transform-origin: right;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: perspective(400px) rotate(0deg);
+        }
+        .container:hover #right{
+            transform: perspective(400px) rotateY(-90deg);
+            transition: all 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../Wallpapers/spidy.jpg" alt="">
+        <div id="left"></div>
+        <div id="right"></div>
+    </div>
+</body>
+
+</html>
